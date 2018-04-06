@@ -30,7 +30,7 @@ public class EnemyFire : MonoBehaviour {
         if (player == null) return;
 		
         cool_down_timer -= Time.deltaTime;
-        if (cool_down_timer <= 0&&player != null &&Vector3.Distance(transform.position,player.position)<3);
+        if (cool_down_timer <= 0&&player != null &&Vector3.Distance(transform.position,player.position)<3)
         {
             cool_down_timer = fire_delay;
             Debug.Log("Pew!");
