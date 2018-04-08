@@ -43,6 +43,7 @@ public class DamageHandler : MonoBehaviour {
 		}
 
 		if(health<=0){
+			Debug.Log("Dying...");
             Die();
 		}
 

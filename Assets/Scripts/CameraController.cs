@@ -8,6 +8,8 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(follow){
+			GameObject player_object = GameObject.Find("Player1");
+			my_target = player_object.transform;			
 		if (my_target != null){
 			Vector3 new_position = my_target.position;
 			new_position.z = transform.position.z;
