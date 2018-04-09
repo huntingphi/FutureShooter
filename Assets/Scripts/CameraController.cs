@@ -12,7 +12,9 @@ public class CameraController : MonoBehaviour {
 		target = my_target.name;
 	}
 	void Update () {
-		if(GameObject.Find(target)==null){}
+		if(GameObject.Find(target)==null){
+			Debug.Log("Target not found: "+target);
+		}
 		else{
 
         GameObject player_object = GameObject.Find(target);
@@ -21,7 +23,6 @@ public class CameraController : MonoBehaviour {
                 // player_object = GameObject.Find(my_target.name);
 				// Debug.Log(GameObject.Find(my_target.name));
                 if(player_object == null){
-                Debug.Log("WTAF!!!!!!!!!!!!!!!!");
 				}else{
                 my_target = player_object;
 				}

@@ -62,8 +62,14 @@ public class DamageHandler : MonoBehaviour {
 	void Die(){
 		Camera[] cams = Camera.allCameras;
 		CameraController cc;
-		if(gameObject.name == "Player1")cc =cams[1].GetComponent<CameraController>();
-        else cc = cams[0].GetComponent<CameraController>();
+		if(gameObject.name == "Player1"){
+			if(cams[0].tag=="Camera1")cc =cams[0].GetComponent<CameraController>();
+			else cc = cams[1].GetComponent<CameraController>();
+		}else{
+            if (cams[0].tag == "Camera2") cc = cams[0].GetComponent<CameraController>();
+            else cc = cams[1].GetComponent<CameraController>();
+		} 
+			
 		cc.enabled = false;
 
         Destroy(gameObject);

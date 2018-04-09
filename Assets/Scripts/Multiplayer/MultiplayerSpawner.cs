@@ -51,21 +51,29 @@ public class MultiplayerSpawner : MonoBehaviour
         player_collider.size = spawn_collider.size;
         // player_collider.transform = spawn_collider.transform;
         // player_collider = spawn_collider;
-        Debug.Log(spawned_object.transform.rotation.eulerAngles);
         // Transform player_transform = player_prefab.GetComponent<Transform>();
         // player_transform = spawned_object.GetComponent<Transform>();
         
         player_instance = (GameObject)Instantiate(player_prefab, spawned_object.transform.position,spawned_object.transform.rotation);
         
-        Debug.Log(player_prefab.transform.rotation.eulerAngles);
         
         player_instance.name = player_prefab.name;
 
         Camera[] cams = Camera.allCameras;
         CameraController cc;
-        if (gameObject.name == "Player1") cc = cams[1].GetComponent<CameraController>();
-        else cc = cams[0].GetComponent<CameraController>();
-        cc.enabled = enabled;
+        if (gameObject.name == "Player1 Spawn")
+        {
+            if (cams[0].tag == "Camera1") cc = cams[0].GetComponent<CameraController>();
+            else cc = cams[1].GetComponent<CameraController>();
+        }
+        else
+        {
+            if (cams[0].tag == "Camera2") cc = cams[0].GetComponent<CameraController>();
+            else cc = cams[1].GetComponent<CameraController>();
+        }
+
+        cc.enabled = true;
+
     }
 
 
