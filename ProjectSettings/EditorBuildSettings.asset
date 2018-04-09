@@ -11,3 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SinglePlayerGame.unity
     guid: f47329205cfde43f0962eabdda65b32b
+  - enabled: 1
+    path: Assets/MultiplayerGame.unity
+    guid: 9fe548d15c52d4b5abf2bd172d4d2df7

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class EndGameListener : MonoBehaviour {
 	public GameObject canvas_player_1;
@@ -20,7 +22,7 @@ public class EndGameListener : MonoBehaviour {
         canvas_player_2.SetActive(false);
         alt_canvas.SetActive(false);
 		player1 = player_1_spawner.GetComponent<MultiplayerSpawner>();
-        player2 = player_1_spawner.GetComponent<MultiplayerSpawner>();
+        player2 = player_2_spawner.GetComponent<MultiplayerSpawner>();
 
     }
 	
@@ -66,5 +68,16 @@ public class EndGameListener : MonoBehaviour {
             controller_1.enabled = false;
 
         }
-		}
+        StartCoroutine("GoToHomeScreen");
+
+    }
+
+
+
+IEnumerator GoToHomeScreen()
+{
+    yield return new WaitForSecondsRealtime(5);
+        SceneManager.LoadScene(0);
+
+    }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerSpawner : MonoBehaviour {
 	public int no_lives = 4;
@@ -33,7 +34,22 @@ public class PlayerSpawner : MonoBehaviour {
 
 
 	void OnGUI(){
-        if (no_lives > 0||player_instance != null) GUI.Label(new Rect(0,0,100,50),"Lives left: "+no_lives);
-        else GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-25, 100, 50),"Game over!");
+        if (no_lives > 0||player_instance != null) {GUI.Label(new Rect(0,0,100,50),"Lives left: "+no_lives);
+		}else{
+			GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-25, 100, 50),"Game over!");
+            StartCoroutine("GoToHomeScreen");
+
+
+        }
 	}
+
+
+
+
+IEnumerator GoToHomeScreen()
+{
+    yield return new WaitForSecondsRealtime(5);
+        SceneManager.LoadScene(0);
+
+    }
 }

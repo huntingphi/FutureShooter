@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MultiplayerFire : MonoBehaviour {
+public class MultiplayerAIFire : MonoBehaviour {
 	public GameObject target_object;
 	string target;
     // Use this for initialization

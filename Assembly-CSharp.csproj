@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\EndGameListener.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\MultiplayerAI.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\MultiplayerAIFire.cs" />
@@ -65,7 +66,6 @@
      <Compile Include="Assets\Scripts\Single Player\DamageHandler.cs" />
      <Compile Include="Assets\Scripts\Single Player\EnemyFire.cs" />
      <Compile Include="Assets\Scripts\Single Player\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\Single Player\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Single Player\Movement.cs" />
      <Compile Include="Assets\Scripts\Single Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Single Player\PlayerFire.cs" />

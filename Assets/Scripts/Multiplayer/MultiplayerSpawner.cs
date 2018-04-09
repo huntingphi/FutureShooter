@@ -18,6 +18,7 @@ public class MultiplayerSpawner : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        no_lives++;
         Spawns = GameObject.FindGameObjectsWithTag(player_prefab.name);
         Spawn();
     }
@@ -38,8 +39,9 @@ public class MultiplayerSpawner : MonoBehaviour
 
     void Spawn()
     {
-        if(nextSpawn(true)!=null){
         no_lives--;
+
+        if(nextSpawn(true)!=null){
         respawn_timer = 1f;
         GameObject spawned_object = nextSpawn(false);
         // player_prefab.AddComponent<CapsuleCollider2D>();
