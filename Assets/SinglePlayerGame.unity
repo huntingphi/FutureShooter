@@ -140,7 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5abc6a67afcae4331a94725f8fef8e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1084146116855990, guid: abd5c1921ad494ae1b78804ce6a86058, type: 2}
+  enemy: {fileID: 1763112006508972, guid: 795a9e062d71c4bd98441ea020848dd3, type: 2}
   speed_cap: 2
   speed_increase: 0.9
 --- !u!4 &504036284
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   no_lives: 4
-  player_prefab: {fileID: 1836327081652032, guid: d94f85b41935a45efb2a3bf5c83cecb0,
+  player_prefab: {fileID: 1784378143149606, guid: df066969d5d414ef89318a79cae677da,
     type: 2}
 --- !u!4 &767873480
 Transform:
@@ -292,5 +292,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f08635378377499997cf93022beb6da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  my_target: {fileID: 4214526870970972, guid: d94f85b41935a45efb2a3bf5c83cecb0, type: 2}
+  my_target: {fileID: 1784378143149606, guid: df066969d5d414ef89318a79cae677da, type: 2}
   follow: 0

@@ -9,6 +9,8 @@ TagManager:
   - Camera1
   - Camera2
   - Bullet
+  - Canvas1
+  - Canvas2
   layers:
   - Default
   - TransparentFX

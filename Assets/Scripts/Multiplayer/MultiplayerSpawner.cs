@@ -9,6 +9,8 @@ public class MultiplayerSpawner : MonoBehaviour
 
     public GameObject player_prefab;
 
+
+
     GameObject player_instance;
     float respawn_timer = 1f;
 
@@ -36,9 +38,10 @@ public class MultiplayerSpawner : MonoBehaviour
 
     void Spawn()
     {
+        if(nextSpawn(true)!=null){
         no_lives--;
         respawn_timer = 1f;
-        GameObject spawned_object = nextSpawn();
+        GameObject spawned_object = nextSpawn(false);
         // player_prefab.AddComponent<CapsuleCollider2D>();
         // = spawned_object;
         SpriteRenderer player_renderer = player_prefab.GetComponent<SpriteRenderer>();
@@ -75,22 +78,18 @@ public class MultiplayerSpawner : MonoBehaviour
         cc.enabled = true;
 
     }
-
-
-    void OnGUI()
-    {
-        if (no_lives > 0 || player_instance != null) GUI.Label(new Rect(0, 0, 100, 50), "Lives left: " + no_lives);
-        else GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 25, 100, 50), "Game over bru");
     }
 
+    
 
-    GameObject nextSpawn()
+
+    GameObject nextSpawn(bool peek)
     {
         foreach (GameObject obj in Spawns)
         {
             if (obj != null)
             {
-                GameObject.Destroy(obj);
+                if(!peek)GameObject.Destroy(obj);
                 // obj = null;
                 return obj;
             }

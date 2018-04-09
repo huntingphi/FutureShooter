@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212422645321525016}
   - component: {fileID: 50869551442441520}
   - component: {fileID: 61457138321355640}
-  - component: {fileID: 114881536635527382}
+  - component: {fileID: 114589497027176596}
   - component: {fileID: 114428541149893434}
   - component: {fileID: 114024775699480706}
   m_Layer: 10
@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   max_speed: 10
---- !u!114 &114881536635527382
+--- !u!114 &114589497027176596
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -122,11 +122,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1656155700751712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57f18da6a8f894ab4bd96219dfc9a851, type: 3}
+  m_Script: {fileID: 11500000, guid: b91f2ed8ca7894da1983f2df8fc36c4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   health: 1
-  invicibility_period: 0
+  invicibility_period: 0.5
 --- !u!212 &212422645321525016
 SpriteRenderer:
   m_ObjectHideFlags: 1

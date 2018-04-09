@@ -51,23 +51,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AI.cs" />
-     <Compile Include="Assets\Scripts\CameraController.cs" />
-     <Compile Include="Assets\Scripts\DamageHandler.cs" />
-     <Compile Include="Assets\Scripts\EnemyFire.cs" />
-     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
-     <Compile Include="Assets\Scripts\MainMenu.cs" />
-     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\EndGameListener.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\MultiplayerAI.cs" />
-     <Compile Include="Assets\Scripts\Multiplayer\MultiplayerFire.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\MultiplayerAIFire.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\MultiplayerDamageHandler.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\MultiplayerSpawner.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player1Controller.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\Player1Fire.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player2Controller.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
-     <Compile Include="Assets\Scripts\PlayerFire.cs" />
-     <Compile Include="Assets\Scripts\PlayerSpawner.cs" />
-     <Compile Include="Assets\Scripts\SceneFade.cs" />
-     <Compile Include="Assets\Scripts\SelfDestruct.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\Player2Fire.cs" />
+     <Compile Include="Assets\Scripts\Single Player\AI.cs" />
+     <Compile Include="Assets\Scripts\Single Player\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Single Player\DamageHandler.cs" />
+     <Compile Include="Assets\Scripts\Single Player\EnemyFire.cs" />
+     <Compile Include="Assets\Scripts\Single Player\EnemySpawner.cs" />
+     <Compile Include="Assets\Scripts\Single Player\MainMenu.cs" />
+     <Compile Include="Assets\Scripts\Single Player\Movement.cs" />
+     <Compile Include="Assets\Scripts\Single Player\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\Single Player\PlayerFire.cs" />
+     <Compile Include="Assets\Scripts\Single Player\PlayerSpawner.cs" />
+     <Compile Include="Assets\Scripts\Single Player\SceneFade.cs" />
+     <Compile Include="Assets\Scripts\Single Player\SelfDestruct.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />

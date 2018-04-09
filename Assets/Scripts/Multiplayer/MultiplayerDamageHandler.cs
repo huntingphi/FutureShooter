@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DamageHandler : MonoBehaviour {
+public class MultiplayerDamageHandler : MonoBehaviour {
 	public int health = 1;
 	public float invicibility_period = 0.5f;
 	float invincible_timer = 0f;

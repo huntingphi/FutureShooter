@@ -34,6 +34,6 @@ public class PlayerSpawner : MonoBehaviour {
 
 	void OnGUI(){
         if (no_lives > 0||player_instance != null) GUI.Label(new Rect(0,0,100,50),"Lives left: "+no_lives);
-        else GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-25, 100, 50),"Game over bru");
+        else GUI.Label(new Rect(Screen.width/2-50, Screen.height/2-25, 100, 50),"Game over!");
 	}
 }
