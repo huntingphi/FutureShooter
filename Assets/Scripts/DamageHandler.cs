@@ -25,7 +25,10 @@ public class DamageHandler : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.layer == gameObject.layer || col.gameObject.layer == 0) return;
-		if(col.gameObject.tag == "Bullet")GameObject.Destroy(col.gameObject);
+		if(col.gameObject.layer==14&&gameObject.layer==11)return;
+        if (col.gameObject.layer == 13 && gameObject.layer == 8) return;
+
+        if(col.gameObject.tag == "Bullet")GameObject.Destroy(col.gameObject);
         Debug.Log("Trigger!");
         health--;
 

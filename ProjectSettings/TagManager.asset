@@ -23,8 +23,8 @@ TagManager:
   - Invincible
   - Player2
   - Bullet
-  - 
-  - 
+  - Static1
+  - Static2
   - 
   - 
   - 
@@ -45,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3764554541
+    locked: 0
+  - name: AboveGround
+    uniqueID: 29404361
     locked: 0

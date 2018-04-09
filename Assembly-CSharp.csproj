@@ -58,6 +58,8 @@
      <Compile Include="Assets\Scripts\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\MultiplayerAI.cs" />
+     <Compile Include="Assets\Scripts\Multiplayer\MultiplayerFire.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\MultiplayerSpawner.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player1Controller.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player2Controller.cs" />
