@@ -74,7 +74,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -116,7 +116,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fd4c28a3a3f34cb8a3011e96aea5f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 1656155700751712, guid: eab2ac627ae75433aaed0dd0b6119bc8,
+    type: 2}
   fire_delay: 0.25
   offset: {x: 0, y: 0.5, z: 0}
 --- !u!212 &212608363206523552

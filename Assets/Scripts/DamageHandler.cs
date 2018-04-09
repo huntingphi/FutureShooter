@@ -21,7 +21,16 @@ public class DamageHandler : MonoBehaviour {
             }
 		}
 	}
-	// Update is called once per frame
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.layer == gameObject.layer || col.gameObject.layer == 0) return;
+		if(col.gameObject.tag == "Bullet")GameObject.Destroy(col.gameObject);
+        Debug.Log("Trigger!");
+        health--;
+
+        invincible_timer = invicibility_period;
+    }
 	void OnTriggerEnter2D () {
 		Debug.Log("Trigger!");
 		health--;
@@ -43,7 +52,6 @@ public class DamageHandler : MonoBehaviour {
 		}
 
 		if(health<=0){
-			Debug.Log("Dying...");
             Die();
 		}
 
@@ -52,6 +60,12 @@ public class DamageHandler : MonoBehaviour {
 
 
 	void Die(){
-		Destroy(gameObject);
+		Camera[] cams = Camera.allCameras;
+		CameraController cc;
+		if(gameObject.name == "Player1")cc =cams[1].GetComponent<CameraController>();
+        else cc = cams[0].GetComponent<CameraController>();
+		cc.enabled = false;
+
+        Destroy(gameObject);
 	}
 }

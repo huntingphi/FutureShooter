@@ -60,6 +60,12 @@ public class MultiplayerSpawner : MonoBehaviour
         Debug.Log(player_prefab.transform.rotation.eulerAngles);
         
         player_instance.name = player_prefab.name;
+
+        Camera[] cams = Camera.allCameras;
+        CameraController cc;
+        if (gameObject.name == "Player1") cc = cams[1].GetComponent<CameraController>();
+        else cc = cams[0].GetComponent<CameraController>();
+        cc.enabled = enabled;
     }
 
 

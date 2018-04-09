@@ -58,12 +58,12 @@ public class Player2Controller : MonoBehaviour
 
     bool outOfBounds(float x_pos, float y_pos, float object_radius)
     {
-        float abs_x_bound = Camera.main.orthographicSize * ((float)Screen.width / (float)Screen.height);
-        float abs_y_bound = Camera.main.orthographicSize;
-        if (x_pos + object_radius > abs_x_bound) return true;
-        if (x_pos - object_radius < -abs_x_bound) return true;
-        if (y_pos + object_radius > abs_y_bound) return true;
-        if (y_pos - object_radius < -abs_y_bound) return true;
+        // float abs_x_bound = Camera.main.orthographicSize * ((float)Screen.width / (float)Screen.height);
+        // float abs_y_bound = Camera.main.orthographicSize;
+        // if (x_pos + object_radius > abs_x_bound) return true;
+        // if (x_pos - object_radius < -abs_x_bound) return true;
+        // if (y_pos + object_radius > abs_y_bound) return true;
+        // if (y_pos - object_radius < -abs_y_bound) return true;
         return false;
     }
 }
