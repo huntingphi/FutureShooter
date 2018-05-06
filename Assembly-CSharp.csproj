@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Multiplayer\Player1Fire.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player2Controller.cs" />
      <Compile Include="Assets\Scripts\Multiplayer\Player2Fire.cs" />
+     <Compile Include="Assets\Scripts\SceneFade.cs" />
      <Compile Include="Assets\Scripts\Single Player\AI.cs" />
      <Compile Include="Assets\Scripts\Single Player\CameraController.cs" />
      <Compile Include="Assets\Scripts\Single Player\DamageHandler.cs" />
@@ -70,7 +71,6 @@
      <Compile Include="Assets\Scripts\Single Player\PlayerController.cs" />
      <Compile Include="Assets\Scripts\Single Player\PlayerFire.cs" />
      <Compile Include="Assets\Scripts\Single Player\PlayerSpawner.cs" />
-     <Compile Include="Assets\Scripts\Single Player\SceneFade.cs" />
      <Compile Include="Assets\Scripts\Single Player\SelfDestruct.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
